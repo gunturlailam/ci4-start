@@ -1,0 +1,1685 @@
+ERROR - 2025-09-30 10:51:11 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:51:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `transportasi`, `penginapan`, `pokok`, `total`) VALUES (:kode:, :agenda:, :transportasi:, :penginapan:, :pokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:51:25 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:51:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `transportasi`, `penginapan`, `pokok`, `total`) VALUES (:kode:, :agenda:, :transportasi:, :penginapan:, :pokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:51:36 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:51:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `transportasi`, `penginapan`, `pokok`, `total`) VALUES (:kode:, :agenda:, :transportasi:, :penginapan:, :pokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:54:04 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:54:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `transportasi`, `penginapan`, `pokok`, `total`) VALUES (:kode:, :agenda:, :transportasi:, :penginapan:, :pokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:54:26 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:54:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:54:43 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:54:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `transportasi`, `penginapan`, `pokok`, `total`) VALUES (:kode:, :agenda:, :transportasi:, :penginapan:, :pokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:56:31 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:56:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:56:40 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:56:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:58:35 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:58:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:59:01 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:59:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:59:11 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:59:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:59:41 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:59:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 10:59:55 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 10:59:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:00:19 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:00:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:00:29 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:00:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:01:41 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:01:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:03:19 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:03:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:06:50 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:06:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:07:01 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:07:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:08:54 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:08:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:11:47 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:11:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:14:06 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:14:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:14:23 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:14:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:16:16 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:16:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:16:33 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:16:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: sppd/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:17:32 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:17:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:18:41 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:18:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:18:53 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:18:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:19:14 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:19:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+CRITICAL - 2025-09-30 11:19:46 --> CodeIgniter\Exceptions\ConfigException: Invalid DBDriver name: "MySQL"
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\Database.php on line 172.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQL')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\Sppd.php(17): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:19:57 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:19:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:20:35 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:20:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:21:04 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:21:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:22:02 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:22:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:24:29 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:24:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:24:52 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:24:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:25:37 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:25:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:26:02 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:26:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
+ERROR - 2025-09-30 11:26:25 --> Error connecting to the database: mysqli_sql_exception: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:225
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php(225): mysqli->set_charset('utf8mb4')
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#4 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#7 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown character set: 'utf8mb4' in C:\laragon\www\ci-start\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\ci-start\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci-start\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci-start\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ta...', Array, false)
+#3 C:\laragon\www\ci-start\app\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\laragon\www\ci-start\system\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+#5 C:\laragon\www\ci-start\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+#6 C:\laragon\www\ci-start\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ci-start\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\ci-start\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\ci-start\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\ci-start\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-09-30 11:26:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown character set: 'utf8mb4'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabelsppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 3 APPPATH\Controllers\Sppd.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sppd->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sppd))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci-start\\public\\index.php')
