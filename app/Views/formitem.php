@@ -16,6 +16,7 @@
                     <td>
                         <select name="kodebrg" onchange="Tampil()">
                             <option>-PILIH-</option>
+                            <option value="J001">J001</option>
                         </select>
                     </td>
                 </tr>
