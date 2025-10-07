@@ -21,18 +21,22 @@
                 <td>Total</td>
             </tr>
 
-            <?php
-            foreach ($sppdok as $data)
-            ?>
-
-            <tr>
-                <td><?= $data['kode'] ?></td>
-                <td><?= $data['agenda'] ?></td>
-                <td><?= $data['btransportasi'] ?></td>
-                <td><?= $data['bpenginapan'] ?></td>
-                <td><?= $data['bpokok'] ?></td>
-                <td><?= $data['total'] ?></td>
-            </tr>
+            <?php if (!empty($sppdok)) : ?>
+                <?php foreach ($sppdok as $data) : ?>
+                    <tr>
+                        <td><?= esc($data['kode']) ?></td>
+                        <td><?= esc($data['agenda']) ?></td>
+                        <td><?= esc($data['btransportasi']) ?></td>
+                        <td><?= esc($data['bpenginapan']) ?></td>
+                        <td><?= esc($data['bpokok']) ?></td>
+                        <td><?= esc($data['total']) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <tr>
+                    <td colspan="6">Belum ada data.</td>
+                </tr>
+            <?php endif; ?>
         </table>
     </center>
 </body>

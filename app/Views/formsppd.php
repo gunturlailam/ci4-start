@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <form action="<?= site_url('/simpan') ?>" name="form" method="POST">
+    <form action="/simpan" name="form" method="POST">
+        <?= function_exists('csrf_field') ? csrf_field() : '' ?>
         <table>
             <tr>
                 <td>Kode Keberangkatan</td>
@@ -32,28 +33,28 @@
             <tr>
                 <td>Biaya Transportasi</td>
                 <td>
-                    <input type="text" name="transportasi" onkeyup="b()">
+                    <input type="text" name="transportasi" oninput="b()">
                 </td>
             </tr>
 
             <tr>
                 <td>Biaya Penginapan</td>
                 <td>
-                    <input type="text" name="penginapan" onkeyup="b()">
+                    <input type="text" name="penginapan" oninput="b()">
                 </td>
             </tr>
 
             <tr>
                 <td>Biaya Pokok</td>
                 <td>
-                    <input type="text" name="pokok" onkeyup="b()">
+                    <input type="text" name="pokok" oninput="b()">
                 </td>
             </tr>
 
             <tr>
                 <td>Total</td>
                 <td>
-                    <input type="text" name="total" onkeyup="b()">
+                    <input type="text" name="total" readonly>
                 </td>
             </tr>
 
